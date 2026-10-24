@@ -1,0 +1,19 @@
+[project]
+name = "arc-agi-3-rsi"
+version = "0.1.0"
+description = "Two-Loop Recursive Self-Improvement Harness for ARC-AGI-3"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "arc-agi>=0.9.9",
+    "openai>=1.60.0",
+    "numpy>=1.26.0",
+    "pillow>=12.3.0",
+    "pyyaml>=6.0.1",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--basetemp=.pytest_tmp"
