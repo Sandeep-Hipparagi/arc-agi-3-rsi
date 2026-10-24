@@ -267,7 +267,7 @@ def test_llm_retry_backoff_on_transient_error():
     transient errors (RateLimitError, APIConnectionError), performs backoff retries,
     and succeeds once the transient condition clears.
     """
-    req = httpx.Request("POST", "https://api.openai.com/v1/chat/completions")
+    req = httpx.Request("POST", "http://127.0.0.1:8000/v1/chat/completions")
     rate_limit_resp = httpx.Response(status_code=429, request=req)
     rate_limit_err = openai.RateLimitError(message="Rate limit exceeded", response=rate_limit_resp, body=None)
 

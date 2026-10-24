@@ -102,7 +102,7 @@ def test_world_model_lifecycle():
     assert "red_enemy" in wm.unverified_hypotheses
     assert "Added/updated hypothesis [red_enemy]" in res1
 
-    # 2. Promote to proven -> automatically removed from unverified
+    # 2. Promote to proven -> verifies removal from unverified
     res2 = wm.update("promote_to_proven", "red_enemy", "Red entities confirmed lethal on contact")
     assert "red_enemy" in wm.proven_mechanics
     assert "red_enemy" not in wm.unverified_hypotheses

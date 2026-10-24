@@ -117,9 +117,9 @@ class ArcEnvBridge:
         Executes a single billed environment action (`ACTION1`..`ACTION6` or `RESET`).
         """
         action_upper = action_name.upper()
-        if not hasattr(GameAction, action_upper):
-            raise ValueError(f"Invalid GameAction: '{action_name}'. Valid actions: {[a.name for a in GameAction]}")
-        action_enum = getattr(GameAction, action_upper)
+        if action_upper not in GameAction.__members__:
+            raise ValueError(f"Invalid GameAction: '{action_name}'. Valid actions: {list(GameAction.__members__.keys())}")
+        action_enum = GameAction[action_upper]
 
         data: Optional[Dict[str, int]] = None
         if action_upper == "ACTION6" and x is not None and y is not None:

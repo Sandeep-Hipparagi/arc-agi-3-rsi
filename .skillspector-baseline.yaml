@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:2cc218d1d8b1de22ac9cfa8d8f87ead59b814778fc28d41a280b643a9e6da299",
+      "rule_id": "AST1",
+      "file": "src/repl_session.py",
+      "reason": "Accepted finding (auto-generated baseline)"
+    },
+    {
+      "hash": "sha256:85bc6859cbff44447fd4a26a1536ba3e8cf7bd431447876f5ee55c8880fb35fc",
+      "rule_id": "SC4",
+      "file": "pyproject.toml",
+      "reason": "Accepted finding (auto-generated baseline)"
+    },
+    {
+      "hash": "sha256:4a77662d776de52a12d742ea6fc3d9509e06c96f159503183dd6cabc72d56308",
+      "rule_id": "SC4",
+      "file": "pyproject.toml",
+      "reason": "Accepted finding (auto-generated baseline)"
+    },
+    {
+      "hash": "sha256:c467d1e3d787ef2d85ace289a47416dbfc9978c606991a309475059286b404c7",
+      "rule_id": "SC4",
+      "file": "pyproject.toml",
+      "reason": "Accepted finding (auto-generated baseline)"
+    },
+    {
+      "hash": "sha256:603bc0009cf8f7372da52b94f6b1a3be8d5b1ecff2075042e678fa75973d37b5",
+      "rule_id": "SC4",
+      "file": "pyproject.toml",
+      "reason": "Accepted finding (auto-generated baseline)"
+    }
+  ]
+}

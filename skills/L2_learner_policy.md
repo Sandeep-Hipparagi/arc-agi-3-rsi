@@ -26,8 +26,8 @@ When mutating `SKILL.md`, target one or more of these root causes:
 
 ### Failure Mode 1: Blind Exploration / Wall Bumping
 - **Symptom**: High `noop_steps`, multiple steps with `grid_changed == False`.
-- **Diagnosis**: Agent executed `env_step` without checking adjacent terrain/obstacles in `repl_exec`.
-- **Prescription**: Inject Python inspection routines into `SKILL.md` (e.g., extracting 3x3 local neighborhood around the player avatar, testing collision masks before stepping).
+- **Diagnosis**: Agent took an action without first verifying adjacent terrain/obstacles in `repl_exec`.
+- **Prescription**: Incorporate Python inspection routines into `SKILL.md` (e.g., extracting 3x3 local neighborhood around the player avatar, testing collision masks before stepping).
 
 ### Failure Mode 2: Sub-Frame Motion Blindness
 - **Symptom**: Fatal collision with enemies or unexpected level resets.
